@@ -26,7 +26,7 @@ const getInfo = async () => {
                     const info = {
                         bic: item['$']['BIC'],
                         name: item['ParticipantInfo'][0]['$']['NameP'],
-                        account: subItem['$']['Account']
+                        corrAccount: subItem['$']['Account']
                     }
                     dataForDB.push(info);
                 })
